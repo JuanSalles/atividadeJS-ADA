@@ -10,9 +10,9 @@
     <main class="calculadora">
         <section>
             <h1>Calculadora</h1>
-            <hr><br>
+            <br><br>
             <form id="formulario">
-                <input type="number" class="entrada-numero" id="input-A">
+                <input type="number" class="entrada-numero" value="0" id="input-A">
                 <select class="botao-select" id="operador">
                     <option>></option>
                     <option><</option>
@@ -24,9 +24,9 @@
                     <option>*</option>
                     <option>/</option>
                 </select>
-                <input type="number" class="entrada-numero" id="input-B">
+                <input type="number" class="entrada-numero" value="0" id="input-B">
                 <button type="submit" class="botao-resultado">=</button>
-                <input class="caixa-resultado" id="resultado" disabled/>
+                <input class="caixa-resultado" placeholder="<= click" id="resultado" disabled/>
             </form>
         </section>
     </main>
