@@ -6,31 +6,30 @@ form.addEventListener("submit", event => {
 
     event.preventDefault()
 
-    const A = +event.target.elements["input-A"].value;
-    const B = +event.target.elements["input-B"].value;
+    const n1 = +event.target.elements["input-A"].value;
+    const n2 = +event.target.elements["input-B"].value;
 
     const operador = event.target.elements["operador"].value;
 
-
-    console.log(event.target.elements["operador"].value);
-
     if (operador == ">"){
-        resultado.value = `${A>B}`
+        resultado.value = `${n1>n2}`
     }else if (operador == "<"){
-        resultado.value = `${A<B}`
+        resultado.value = `${n1<n2}`
     }else if (operador == "<="){
-        resultado.value = `${A<=B}`
+        resultado.value = `${n1<=n2}`
     }else if (operador == ">="){
-        resultado.value = `${A>=B}`
+        resultado.value = `${n1>=n2}`
     }else if (operador == "="){
-        resultado.value = `${A==B}`
+        resultado.value = `${n1==n2}`
     }else if (operador == "+"){
-        resultado.value = `${A+B}`
+        resultado.value = `${n1+n2}`
     }else if (operador == "-"){
-        resultado.value = `${A-B}`
+        resultado.value = `${n1-n2}`
     }else if (operador == "*"){
-        resultado.value = `${A*B}`
+        resultado.value = `${n1*n2}`
+    }else if(operador == "!="){
+        resultado.value = `${n1!=n2}`
     }else{
-        resultado.value = `${A/B}`
+        resultado.value = `${n1/n2}`
     }
 })
